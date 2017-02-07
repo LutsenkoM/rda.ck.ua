@@ -1,0 +1,10 @@
+/*
+Theme Name: hashone-child
+Theme URI: atis.ua
+Description: Child theme for the hashone
+Author: Max
+Author URI: http://example.com/about/
+Template: hashone
+Version: 0.1.0
+*/
+@import url('../hashone/style.css');
