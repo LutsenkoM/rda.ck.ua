@@ -8,3 +8,8 @@ Template: hashone
 Version: 0.1.0
 */
 @import url('../hashone/style.css');
+
+
+.hs-featured-icon {
+	    background: #000;
+}
