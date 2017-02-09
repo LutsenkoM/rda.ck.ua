@@ -7,7 +7,7 @@
 
 <section id="hs-home-slider-section">
 	<div id="hs-bx-slider">
-	<?php for ($i=1; $i < 4; $i++) {  
+	<?php for ($i=1; $i < 6; $i++) {  // changed 4 to 6
 		$hashone_slider_page_id = get_theme_mod( 'hashone_slider_page'.$i );
 
 		if($hashone_slider_page_id){
