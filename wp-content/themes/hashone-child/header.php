@@ -40,7 +40,14 @@
 				<?php endif; // End header image check. ?>
 
 
+
 			</div><!-- .site-branding -->
+
+			<div class="search-form-container">
+				<?php
+				get_search_form();
+				?>
+			</div>
 
 			<nav id="hs-site-navigation" class="hs-main-navigation">
 				<div class="hs-toggle-menu"><span></span></div>

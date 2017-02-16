@@ -39,18 +39,20 @@ if( get_theme_mod('hashone_disable_featured_sec') != 'on' ){ ?>
                                 $hashone_wow_delay = ($i/2)-1+0.5;
                                 ?>
                                 <div class="hs-featured-post hs-featured-post<?php echo $i; ?> wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="<?php echo $hashone_wow_delay; ?>s">
-                                    <div class="hs-featured-icon"><i class="fa <?php echo esc_attr($hashone_featured_page_icon); ?>"></i></div>
-                                    <h3>
-                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    </h3>
-                                    <div class="hs-featured-excerpt">
-                                        <?php
-                                        if(has_excerpt()){
-                                            echo get_the_excerpt();
-                                        }else{
-                                            echo hashone_excerpt( get_the_content(), 100);
-                                        }?>
-                                    </div>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <div class="hs-featured-icon"><i class="fa <?php echo esc_attr($hashone_featured_page_icon); ?>"></i></div>
+                                        <h3>
+                                            <?php the_title(); ?>
+                                        </h3>
+                                        <div class="hs-featured-excerpt">
+                                            <?php
+                                            if(has_excerpt()){
+                                                echo get_the_excerpt();
+                                            }else{
+                                                echo hashone_excerpt( get_the_content(), 100);
+                                            }?>
+                                        </div>
+                                    </a>
                                 </div>
                                 <?php
                             endwhile;
