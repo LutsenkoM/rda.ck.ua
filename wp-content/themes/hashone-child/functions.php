@@ -1,10 +1,12 @@
 <?php
 
 function load_style_script() {
-    wp_enqueue_script('jquery-3.1.1.min.js', get_template_directory_uri() . '/js/lib/jquery-3.1.1.min.js');
-    wp_enqueue_script('main.js', get_template_directory_uri() . '/js/main.js');
+  /*  wp_enqueue_style('skin.css', get_stylesheet_directory() . '/css/skins/'<?php $options = get_option('sample_theme_options'); echo $options['selectinput'];?> '.css'); */
+
 }
 
 add_action('wp_enqueue_scripts', 'load_style_script');
+
+require_once ( get_stylesheet_directory() . '/theme-options.php' );
 
 ?>

@@ -13,8 +13,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php wp_head(); ?>
+<!--<link rel="stylesheet" href="--><?php //echo get_template_directory_uri(); ?><!--/css/skins/--><?php //$options = get_option('sample_theme_options'); echo $options['selectinput']; ?><!--.css">-->
 
-<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -34,20 +35,12 @@
 					<?php else : ?>
 					<p class="hs-site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php endif; ?>
-					
+
 					<p class="hs-site-description"><?php bloginfo( 'description' ); ?></p>
-					
+
 				<?php endif; // End header image check. ?>
 
-
-
 			</div><!-- .site-branding -->
-
-			<div class="search-form-container">
-				<?php
-				get_search_form();
-				?>
-			</div>
 
 			<nav id="hs-site-navigation" class="hs-main-navigation">
 				<div class="hs-toggle-menu"><span></span></div>
@@ -56,8 +49,9 @@
 					'theme_location' => 'primary', 
 					'container_class' => 'hs-menu' ,
 					'menu_class' => 'hs-clearfix',
-					'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				) ); 
+					'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s </ul>',
+				) );
+
 				?>
 			</nav><!-- #hs-site-navigation -->
 		</div>
