@@ -1,0 +1,22 @@
+#hs-masthead {
+    border-top: 2px solid #830e00;
+}
+
+@media screen and (max-width: 1180px){
+    .hs-toggle-menu span {
+        background: #830e00;
+        box-shadow: 0 10px 0px 0px #830e00, 0 -10px 0px 0px #830e00;
+    }
+}
+
+.hs-featured-icon {
+    background: #830e00;
+}
+
+.hs-featured-icon:before{
+    border-bottom: 25px solid #830e00;
+}
+
+.hs-featured-icon:after {
+    border-top: 25px solid #830e00;
+}
