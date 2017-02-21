@@ -24,16 +24,16 @@ include_once __DIR__ . '/wp-config.common.php';
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'dev_db');
+define('DB_NAME', 'rda_db');  //define('DB_NAME', 'dev_db');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'rda_team');
+define('DB_USER', 'root'); //define('DB_USER', 'rda_team');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'Vet2@2f6');
+define('DB_PASSWORD', ''); //define('DB_PASSWORD', 'Vet2@2f6');
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'dev.rda.ck.ua');
+define('DB_HOST', 'localhost'); //define('DB_HOST', 'dev.rda.ck.ua');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');
